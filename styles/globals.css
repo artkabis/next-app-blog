@@ -643,3 +643,20 @@ ul.navbar-nav.ml-auto li {
   background-color: #1bcacd;
   opacity: 1;
 }
+/***** Contact *****/
+/* Form */
+
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin: 0 auto;
+  background: #222;
+  padding: 30px;
+  color: white;
+}
+
+.formContact * {
+  margin: 5px 0;
+}
