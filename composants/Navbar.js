@@ -15,6 +15,12 @@ const Navbar = () => (
           </li>
           <li className="link">
             {" "}
+            <Link href={"/articles"}>
+              <a>Nos articles</a>
+            </Link>
+          </li>
+          <li className="link">
+            {" "}
             <Link href={"/about"}>
               <a>À propos</a>
             </Link>
