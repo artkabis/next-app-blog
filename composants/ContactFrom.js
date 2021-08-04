@@ -3,11 +3,11 @@
 
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-require("dotenv").config();
+//require("dotenv").config();
 
 function ContactForm() {
-  const formId = String(process.env.FORM_ID);
-  const [state, handleSubmit] = useForm(formId);
+  //const formId = String(process.env.FORM_ID);
+  const [state, handleSubmit] = useForm("xnqlggel");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
