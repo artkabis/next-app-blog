@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "embla-carousel": "^4.5.3",
     "esbuild": "^0.12.17",
     "gray-matter": "^4.0.3",
