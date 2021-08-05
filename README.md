@@ -12,6 +12,8 @@ cd [MY_APP]
 yarn  # or npm install
 ```
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/artkabis/next-app-blog.git)
+
 First, run the development server:
 
 ```bash
