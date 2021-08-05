@@ -2,12 +2,31 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Clone repo 
+```bash
+git clone https://github.com/artkabis/next-app-blog.git [MY_APP]
+```
+Install dependencies:
+```bash
+cd [MY_APP]
+yarn  # or npm install
+```
+
 First, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
+```
+In production:
+
+```bash
+yarn build
+yarn start
+# or
+npm build
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
