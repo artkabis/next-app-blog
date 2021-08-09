@@ -29,8 +29,8 @@ export default function Product({ productId, title }) {
 export async function getStaticProps({ params = {} } = {}) {
   return {
     props: {
-      productId: params.productId + 1,
-      title: `Product ${params.productId + 1}`,
+      productId: params.productId,
+      title: `Product ${params.productId}`,
     },
   };
 }

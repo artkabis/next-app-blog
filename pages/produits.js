@@ -25,11 +25,11 @@ export default function Produits({ productId, title }) {
         <div className={styles.container}>
           <ul>
             {[...new Array(5)].map((i, index) => (
-              <li key={index}>
-                <Link href={`/products/${index}`}>
+              <li key={index + 1}>
+                <Link href={`/products/${index + 1}`}>
                   <a>
                     <h3>
-                      {index} - {`Produit ${index}`}
+                      {index + 1} - {`Produit ${index + 1}`}
                     </h3>
                   </a>
                 </Link>
