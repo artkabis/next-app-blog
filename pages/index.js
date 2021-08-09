@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Layout from "../composants/Layout";
-//import styles from "../styles/Home.module.css";
 import React from "react";
 import Carousel from "./api/Carousel";
 
@@ -12,9 +11,18 @@ export default function Home() {
     <>
       <Layout>
         <Carousel slides={slides} />
+        <h1 className="titleH1">
+          Artkabis
+          <span className="titleSpan1">Création de site web</span>
+          <span className="titleSpan2">sur-mesure</span>
+          <span className="titleSpan3">dans le Grand Angoulême</span>
+        </h1>
         <h2>
-          2 raisons de choisir Artkabis pour votre projet : prise en charge de A
-          à Z et services personnalisés
+          2 raisons de choisir{" "}
+          <Link href="https://artkabis.fr">
+            <a>Artkabis</a>
+          </Link>{" "}
+          pour votre projet : prise en charge de A à Z et services personnalisés
         </h2>
         <p>
           Création de wireframes, infographies, sites web modernes, web services

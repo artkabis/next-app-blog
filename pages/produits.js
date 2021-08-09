@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Layout from "../composants/Layout";
 
 export default function Produits({ productId, title }) {
   return (
@@ -20,22 +21,23 @@ export default function Produits({ productId, title }) {
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className={styles.container}>
-        <ul>
-          {[...new Array(5)].map((i, index) => (
-            <li key={index}>
-              <Link href={`/products/${index}`}>
-                <a>
-                  <h3>
-                    {index} - {`Produit ${index}`}
-                  </h3>
-                </a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Layout>
+        <div className={styles.container}>
+          <ul>
+            {[...new Array(5)].map((i, index) => (
+              <li key={index}>
+                <Link href={`/products/${index}`}>
+                  <a>
+                    <h3>
+                      {index} - {`Produit ${index}`}
+                    </h3>
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Layout>
     </>
   );
 }
