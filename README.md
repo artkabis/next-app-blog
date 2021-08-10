@@ -57,3 +57,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Demo on Vercel
 Check out our exemple [Vercel App Artkabis](https://next-app-blog-sigma.vercel.app) for preview
+
+## Demo on Netlify
+Check out our exemple [Netlify App Artkabis](https://artkabis.netlify.app) for preview
