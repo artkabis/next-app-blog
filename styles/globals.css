@@ -662,3 +662,13 @@ ul.navbar-nav.ml-auto li {
 .formContact * {
   margin: 5px 0;
 }
+
+.returnLink{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around
+}
+.txtReturnLink{
+  margin-left:10px;
+}

@@ -1,9 +1,22 @@
 import "../styles/globals.css";
 import App from "next/app";
+import { createGlobalStyle } from "styled-components";
+import { config, dom } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
+const GlobalStyles = createGlobalStyle`
+    ${dom.css()}
+    // Insert any other global styles you want here
+`;
 
 function MyApp({ Component, pageProps }) {
   console.log("_app pageProps >> ", pageProps);
-  return <Component {...pageProps} />;
+  return (
+    <>
+    <GlobalStyles/>
+    <Component {...pageProps} />;
+    </>
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for

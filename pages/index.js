@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Layout from "../composants/Layout";
 import React from "react";
-import Carousel from "./api/Carousel";
+import Carousel from "../composants/Slider/Carousel";
 
 export default function Home() {
   const SLIDE_COUNT = 3;
