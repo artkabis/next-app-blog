@@ -9,6 +9,8 @@
 # Exclude any PSD/AI source
 *.psd
 *.ai
+*.pdd
+*.psdt
 
 # testing
 /coverage
