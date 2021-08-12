@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "../composants/Layout";
 import React from "react";
 import Carousel from "../composants/Slider/Carousel";
+import PageCounter from "../composants/CounterComposant/PageCounter";
 
 export default function Home() {
   const SLIDE_COUNT = 3;
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Layout>
         <Carousel slides={slides} />
+        <PageCounter />
         <h1 className="titleH1">
           Artkabis
           <span className="titleSpan1">Création de site web</span>

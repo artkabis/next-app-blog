@@ -40,7 +40,7 @@ const ContentSlide = (contentid) => {
   var cmp = contentid.content;
   return (
     <>
-      <div className="contentSlide">{}</div>
+      <div className="contentSlide">{content[cmp]}</div>
     </>
   );
 };

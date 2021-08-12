@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import App from "next/app";
 import { createGlobalStyle } from "styled-components";
 import { config, dom } from "@fortawesome/fontawesome-svg-core";
+import { Provider } from "react-redux";
+import { useStore } from "../store";
 
 config.autoAddCss = false;
 const GlobalStyles = createGlobalStyle`
@@ -10,14 +12,19 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function MyApp({ Component, pageProps }) {
-  console.log("_app pageProps >> ", pageProps);
+  const store = useStore(pageProps.initialReduxState);
+  console.log("store >> ", store);
   return (
     <>
-    <GlobalStyles/>
-    <Component {...pageProps} />;
+      <GlobalStyles />
+      <Provider store={store}>
+        <Component {...pageProps} />;
+      </Provider>
     </>
-  )
+  );
 }
+
+export default MyApp;
 
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
@@ -33,4 +40,3 @@ MyApp.getInitialProps = async (appContext) => {
   return { ...appProps };
 };
 */
-export default MyApp;
