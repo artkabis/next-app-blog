@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Link from "next/link"
+import Link from "next/link";
 import styles from "../../styles/Home.module.css";
-import Layout from "../../composants/Layout"
-import { faArrowLeft} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Layout from "../../composants/Layout";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Product({ productId, title }) {
   return (
@@ -25,13 +25,13 @@ export default function Product({ productId, title }) {
           <main className={styles.main}>
             <h1 className={styles.title}>{title}</h1>
             <p>Product ID: {productId}</p>
+            <Link href="/produits">
+              <a className="returnLink">
+                <FontAwesomeIcon icon={faArrowLeft} size={"2x"} />
+                <p className="txtReturnLink">Revenir à la liste des produits</p>
+              </a>
+            </Link>
           </main>
-          <Link  href="/produits" >
-            <a className="returnLink"> 
-              <FontAwesomeIcon icon={faArrowLeft} size={'2x'} />
-               <p className="txtReturnLink">Revenir à la liste des produits</p>
-            </a>
-          </Link>
         </div>
       </Layout>
     </>

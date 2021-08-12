@@ -2,6 +2,8 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../composants/Layout";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Produits({ productId, title }) {
   return (
@@ -36,6 +38,12 @@ export default function Produits({ productId, title }) {
               </li>
             ))}
           </ul>
+          <Link href="/">
+            <a className="returnLink">
+              <FontAwesomeIcon icon={faArrowLeft} size={"2x"} />
+              <p className="txtReturnLink">Accueil</p>
+            </a>
+          </Link>
         </div>
       </Layout>
     </>
