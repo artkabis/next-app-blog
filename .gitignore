@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+
+# Exclude any PSD/AI source
+*.psd
+*.ai
+
 # testing
 /coverage
 
